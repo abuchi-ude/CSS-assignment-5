@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 2%;
+            font-weight: 400;
+            background-color: #F5F8FA;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1% 0% 1% 0%;
+            border-bottom: 3px solid #E0E6EA;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin-right: 50px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #1D2C3C;
+        }
+        .account{
+            padding: 10px 20px;
+            border: 3px solid #646E7A;
+            border-radius: 5px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            height: 120vh;
+            margin-top: 5%;
+        }
+        .main .left{
+            width: 50%;
+            background-color: #fff;
+            height: 100%;
+            color: #1D2C3C;
+        }
+        .left .last{
+            border-bottom: 0px solid red;
+        }
+        .left article{
+            width: 50% fit-content;
+            border-bottom: 1px solid rgb(180, 178, 178);
+            padding: 5% 5%;
+        }
+        .left h1{
+            font-size: 2rem;
+            width: fit-content;
+            border: 0px solid black;
+            text-shadow: 0px 4px 4px 0px #0000;
+        }
+        .info{
+            display: flex;
+        }
+        .info p{
+            margin-top: 6px;
+            font-weight: bold;
+        }
+        .info img{
+            margin-right: 1%;
+            width: auto;
+            height: 100%;
+        }
+        .first-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .first-form div{
+            width: 42%;
+            margin-bottom: 3%;
+        }
+        .first-form input{
+            width: 100%;
+            padding: 3%;
+            border-radius: 5px;
+            background-color: #EDEFF2;
+        }
+        .first-form .email{
+            width: 75%;
+        }
+        .first-form .email input{
+            padding: 1.5%;
+        }
+        .payment{
+            display: flex;
+        }
+        .payment img{
+            width: auto;
+            height: 100%;
+            margin-right: 1%;
+        }
+        .payment p{
+            margin-top: 1%;
+            font-weight: bold;
+        }
+        .second-form{
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            border-radius: 5px;
+            margin-bottom: 3%;
+            padding: 1%;
+            background-color: #EDEFF2;
+        }
+        .second-form input{
+            border: none;
+            outline: none;
+            background-color: #EDEFF2;
+        }
+        .second-form .card{
+            width: 65%;
+        }
+        .second-form .cvc{
+            width: 10%;
+        }
+        .second-form .mm{
+            width: 15%;
+        }
+        button{
+            width: 102%;
+            padding: 2%;
+            border-radius: 5px;
+            background-color: #038E7D;
+            color: white;
+        }
+        .help{
+            display: flex;
+            justify-content: center;
+        }
+        .help img{
+            height: 100%;
+            margin-top: 2.3%;
+            margin-right: 1%;
+        }
+        .help p{
+            font-weight: bold;
+        }
+        .help span{
+            font-weight: normal;
+            color: rgb(165, 165, 165);
+        }
+        .stripe{
+            display: flex;
+            justify-content: center;
+            border-bottom: 0px;
+        }
+        
+        .right{
+            background-color: #1179BF;
+            color: white;
+            width: 20%;
+        }
+        .right aside{
+            padding: 7% 0%;
+            margin-left: 6%;
+            width: 80%;
+        }
+        .right .ninety-nine{
+            font-size: 2rem;
+            margin-right: 1%;
+            margin-left: 5%;
+        }
+        .right .position{
+            position: relative;
+        }
+        sup{
+            position: absolute;
+            font-size: 1rem;
+            vertical-align: super;
+        }
+        .check span{
+            display: flex;
+        }
+        .check span img{
+            height: 100%;
+            margin-right: 1.5%;
+        }
+        .check span p{
+            margin-top: -0px;
+        }
+        .right a{
+            color: white;
+        }
+        .right .border{
+            border-bottom: 1px solid black;
+            width: 80%;
+            margin-left: 6%;
+            padding: 5% 0%;
+        }
+        .person{
+            display: flex;
+            position: relative;
+            margin-top: 15%;
+        }
+        .person img{
+            height: 100%;
+            margin-right: 4%;
+        }
+        .person p{
+            position: absolute;
+            top: -2px;
+            left: 50px;
+        }
+        footer{
+            text-align: center;
+            color: #636B6F;
+        }
+        footer span{
+            color: #038E7D;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/assignments altschool/asset/wppusher-logo copy.png" alt="wppusher-logo">
+        <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Learn more</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" class="account">Account</a></li>
+        </ul>
+    </nav>
+<div class="main">
+    <section class="left">
+        <article>
+            <h1>Checkout</h1>
+        </article>
+    <form action="#">
+        <article>
+            <span class="info">
+            <img src="/assignments altschool/asset/1.png" alt="No 1">
+            <p>Your Basic Information</p>
+        </span>
+        <section class="first-form">
+            <div>
+                <label for="Firstname">Firstname</label><br>
+                <input type="text" placeholder="Jane">
+            </div>
+            <div>
+                <label for="Lastname">Lastname</label><br>
+                <input type="text" placeholder="Doe">
+            </div>
+            <div class="email">
+                <label for="Email">Email</label><br>
+                <input type="email" placeholder="janedoe@example.com" >
+            </div>
+        </section>
+        </article>
+        <article>
+            <span class="payment">
+            <img src="/assignments altschool/asset/2.png" alt="No 2">
+            <p>Your Payment Information</p>
+        </span>
+        <label for="credit card">Credit Card</label><br>
+            <div class="second-form">
+                <input type="text" placeholder="Card Number" class="card">
+                <input type="text" placeholder="MM/YY" class="mm">
+                <input type="text" placeholder="CVC" class="cvc">
+            </div>
+        </article>
+        <article class="last">
+            <button>Buy WP Pusher</button>
+            <span class="help">
+            <img src="/assignments altschool/asset/Mask.png" alt="">
+            <p>Need any help? <span>Don't hesistate to contact <br>support!</span></p>
+        </span>
+        <span class="stripe">
+            <img src="/assignments altschool/asset/Shape.png" alt="stripe">
+        </span>
+        </article>
+    </form>
+    </section>
+    <section class="right">
+        <aside class="position">
+            <h2>Freelancer</h2>
+            <p><sup>$</sup><span class="ninety-nine"> 99</span>/year</p>
+            <p>Automatically renews <br>after one year</p>
+        </aside>
+        <aside class="check">
+                <span>
+                    <img src="/assignments altschool/asset/check.png" alt="check"> 
+                    <p>Use on 5 client sides</p>
+                    </span>
+            <span>
+                <img src="/assignments altschool/asset/check.png" alt="check">
+            <p>Private repositries</p></span>
+            <span>
+                <img src="/assignments altschool/asset/check.png" alt="check"> 
+                <p>Email support</p>
+            </span>
+        </aside>
+        <aside class="border">
+            <p>Need 20 clients?<br><br> <a href="#">switch to the agency plan</a></p>
+        </aside>
+        <aside>
+            FTP is horrible to deal with. WP Pusher solves that issue and the customer
+            support is Awesome <br>
+            <span class="person">
+            <img src="/assignments altschool/asset/Bitmap.png" alt="Picture of a person">
+            <p>Kirk Beard</p>
+        </span>
+        </aside>
+    </section>
+</div>
+<footer>
+    <p>© 2018 WP Pusher IVS • <span>Terms of Service</span></p>
+</footer>
+</body>
+</html>
